@@ -19,6 +19,7 @@
 .page-inner {
   max-width: 1000px !important; 
   width: 500px !important;
+　overflow-x: scroll !important;
 }
 
 body{
