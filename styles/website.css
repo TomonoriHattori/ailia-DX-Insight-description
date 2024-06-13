@@ -17,16 +17,17 @@
 }
 
 .page-inner {
-  max-width: 80% !important; 
-  width: 70% !important;
-}
-
-body{
-  font-size: 18px;
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;  /* コンテンツが見切れて見えるようにする */
   overflow-x: auto;  /* 横スクロールの指定 */
   white-space: nowrap;  /* 横スクロールの指定 */
   overflow-scrolling: touch;  /* スクロールを滑らかにする */
   -webkit-overflow-scrolling: touch;  /* スクロールを滑らかにする */
+}
+
+body{
+  font-size: 18px;
 }
 
 .markdown-section h1, 
