@@ -23,6 +23,10 @@
 
 body{
   font-size: 18px;
+  overflow-x: auto;  /* 横スクロールの指定 */
+  white-space: nowrap;  /* 横スクロールの指定 */
+  overflow-scrolling: touch;  /* スクロールを滑らかにする */
+  -webkit-overflow-scrolling: touch;  /* スクロールを滑らかにする */
 }
 
 .markdown-section h1, 
