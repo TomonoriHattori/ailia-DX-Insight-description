@@ -17,8 +17,8 @@
 }
 
 .page-inner {
-  max-width: 1000px; 
-  width: 500px;
+  max-width: 1000px !important; 
+  width: 500px !important;
 }
 
 body{
