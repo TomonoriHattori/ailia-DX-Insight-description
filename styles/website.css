@@ -81,7 +81,10 @@ body{
 	background: #00BBE0;
 }
 
+.table-scroll{
+  overflow-x: scroll;
+}
+
 table {
-overflow: scroll;
 width: 1000px;
 }
