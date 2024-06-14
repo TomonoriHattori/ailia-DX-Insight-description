@@ -17,13 +17,14 @@
 }
 
 .page-inner {
-  max-width: 1000px !important; 
-  width: 500px !important;
-　overflow-x: scroll !important;
+  max-width: fit-content;
+  min-width: 500px;
+  overflow-x: scroll;
 }
 
 body{
-  font-size: 68px;
+  font-size: 18px;
+  width: 100%;
 }
 
 .markdown-section h1, 
