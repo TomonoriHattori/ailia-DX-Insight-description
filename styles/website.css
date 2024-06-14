@@ -87,6 +87,7 @@ body{
 }
 
 table {
-width: 100%;
-  white-space: nowrap;
+  display: block;
+  overflow-x: auto;
+  width: 1080px;
 }
