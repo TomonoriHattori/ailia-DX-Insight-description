@@ -18,7 +18,7 @@
 
 .page-inner {
   max-width: fit-content;
-  min-width: 300px;
+  min-width: 500px;
   overflow-x: scroll;
 }
 
