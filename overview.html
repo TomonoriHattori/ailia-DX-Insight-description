@@ -52,7 +52,19 @@
     
     
     <link rel="prev" href="./" />
+
+    <style>
+.overflow-x-wrap{
+    border: 1px solid #999;
+    width: 200px;
+    padding: 10px;
+    overflow-x: scroll;
+}
+.overflow-x{
     
+/*コレ*/width: 500px;
+}
+</style>
 
     </head>
     <body>
@@ -503,62 +515,66 @@ AIを使った業務効率の改善が簡単に行えます。</p>
 <p><img src="img/overview_01.png" alt="overview_01.png"></p>
 <h2 id="機能">機能</h2>
 <p>aillia DX insightでは下記の機能を使用可能です。各機能で使用されるモデルと実行環境は下記となります。</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">機能</th>
-<th style="text-align:center">クラウドで動作</th>
-<th style="text-align:center">端末上で動作</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">文章検索（RAG）</td>
-<td style="text-align:center">ChatGPT、Azure OpenAI、Gemini、Claude(* 準備中)（回答生成）</td>
-<td style="text-align:center">ailia SDK（インデックス作成、ベクトル検索、Re-Rank機能）、カスタムLLM（回答生成）</td>
-</tr>
-<tr>
-<td style="text-align:center">画像生成</td>
-<td style="text-align:center">DALLE</td>
-<td style="text-align:center">StableDiffusion(* 準備中)</td>
-</tr>
-<tr>
-<td style="text-align:center">要約・アイデア出し</td>
-<td style="text-align:center">ChatGPT、Azure OpenAI、Gemini、Claude(* 準備中)（回答生成）</td>
-<td style="text-align:center">カスタムLLM</td>
-</tr>
-<tr>
-<td style="text-align:center">翻訳</td>
-<td style="text-align:center">ChatGPT、Azure OpenAI、Gemini、Claude(* 準備中)（回答生成）</td>
-<td style="text-align:center">ailia SDK、カスタムLLM</td>
-</tr>
-<tr>
-<td style="text-align:center">画像検索</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">ailia SDK</td>
-</tr>
-<tr>
-<td style="text-align:center">音声入力</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">ailia SDK</td>
-</tr>
-<tr>
-<td style="text-align:center">音声認識</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">ailia SDK</td>
-</tr>
-<tr>
-<td style="text-align:center">議事録</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">ailia SDK</td>
-</tr>
-<tr>
-<td style="text-align:center">OCR</td>
-<td style="text-align:center">Azure AI Vision(* 準備中)</td>
-<td style="text-align:center">ailia SDK</td>
-</tr>
-</tbody>
-</table>
+                                    
+<div class="scroll_area" style="width:100%;max-width:800px;overflow-x:scroll;">
+    <table style="width:900px;">
+      <thead>
+      <tr>
+      <th>機能</th>
+      <th>クラウドで動作</th>
+      <th>端末上で動作</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+      <td>文章検索（RAG）</td>
+      <td>ChatGPT、Azure OpenAI、Gemini、Claude(* 準備中)（回答生成）</td>
+      <td>ailia SDK（インデックス作成、ベクトル検索、Re-Rank機能）、カスタムLLM（回答生成）</td>
+      </tr>
+      <tr>
+      <td>画像生成</td>
+      <td>DALLE</td>
+      <td>StableDiffusion(* 準備中)</td>
+      </tr>
+      <tr>
+      <td>要約・アイデア出し</td>
+      <td>ChatGPT、Azure OpenAI、Gemini、Claude(* 準備中)（回答生成）</td>
+      <td>カスタムLLM</td>
+      </tr>
+      <tr>
+      <td>翻訳</td>
+      <td>ChatGPT、Azure OpenAI、Gemini、Claude(* 準備中)（回答生成）</td>
+      <td>ailia SDK、カスタムLLM</td>
+      </tr>
+      <tr>
+      <td>画像検索</td>
+      <td>-</td>
+      <td>ailia SDK</td>
+      </tr>
+      <tr>
+      <td>音声入力</td>
+      <td>-</td>
+      <td>ailia SDK</td>
+      </tr>
+      <tr>
+      <td>音声認識</td>
+      <td>-</td>
+      <td>ailia SDK</td>
+      </tr>
+      <tr>
+      <td>議事録</td>
+      <td>-</td>
+      <td>ailia SDK</td>
+      </tr>
+      <tr>
+      <td>OCR</td>
+      <td>Azure AI Vision(* 準備中)</td>
+      <td>ailia SDK</td>
+      </tr>
+      </tbody>
+    </table>
+</div>
+                                    
 <h2 id="対応ファイルフォーマット">対応ファイルフォーマット</h2>
 <p>ailia DX Insightがサポートしている形式は下記となります。</p>
 <h6 id="一般的なオフィス系ドキュメントフォーマット">一般的なオフィス系ドキュメントフォーマット</h6>

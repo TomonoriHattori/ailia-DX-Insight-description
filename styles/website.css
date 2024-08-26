@@ -17,12 +17,14 @@
 }
 
 .page-inner {
-  max-width: 80% !important; 
-  width: 70% !important;
+  max-width: fit-content;
+  min-width: 500px;
+  overflow-x: scroll;
 }
 
 body{
   font-size: 18px;
+  width: 100%;
 }
 
 .markdown-section h1, 
@@ -81,3 +83,34 @@ body{
 	background: #00BBE0;
 }
 
+.markdown-section h4 a {
+  font-size: 12px;
+  line-height: 1.5em;
+  display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 200px;
+	margin: auto;
+	padding: 1em 4em;
+	font-weight: bold;
+	border: 2px solid #00BBE0;
+	color: #00BBE0;
+	border-radius: 100vh;
+	transition: 0.5s;
+}
+
+.markdown-section h4 a:hover {
+  color: #fff;
+	background: #00BBE0;
+}
+
+svg {
+	vertical-align: -3px;
+}
+
+table {
+  display: block;
+  overflow-x: auto;
+  width: 1080px;
+}
